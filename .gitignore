@@ -1,0 +1,25 @@
+# Diretório do ambiente virtual
+venv/
+.env/
+
+# Arquivos de compilação Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Configurações de IDEs
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de pacotes e dependências
+*.egg-info/
+.Python
