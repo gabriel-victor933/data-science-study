@@ -97,9 +97,8 @@ def normal_two_sided_bounds(probability, mu=0, sigma=1):
 
 
 mu_0, sigma_0 = normal_approximation_to_binomial(1000, 0.5)
-print(mu_0,sigma_0)
+
 lo, hi = normal_two_sided_bounds(0.95,mu_0, sigma_0)
-print(lo, hi)
 
 
 mu_1, sigma_1 = normal_approximation_to_binomial(1000, 0.55)
@@ -110,7 +109,6 @@ power = 1 - type_2_probability # 0.887
 hi = normal_upper_bound(0.95, mu_0, sigma_0)
 type_2_probability = normal_probability_below(hi, mu_1, sigma_1)
 power = 1 - type_2_probability # 0.936
-print(power)
 
 def two_sided_p_value(x, mu=0, sigma=1):
     if x >= mu:
@@ -120,4 +118,3 @@ def two_sided_p_value(x, mu=0, sigma=1):
     # se x for menor do que a média, a coroa será o que for menor do que x
         return 2 * normal_probability_below(x, mu, sigma)
     
-print('p-values:',two_sided_p_value(529.5, mu_0, sigma_0))
