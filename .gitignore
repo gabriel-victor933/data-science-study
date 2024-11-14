@@ -23,3 +23,5 @@ Thumbs.db
 # Arquivos de pacotes e dependências
 *.egg-info/
 .Python
+
+spam
