@@ -63,6 +63,3 @@ def correlation(x,y):
     else:
         return 0
     
-
-print(correlation(num_friends,minutes_per_day))
-print(correlation(num_friends,minutes_per_day2))
